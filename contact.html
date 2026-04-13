@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – NesCola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-stack">
+      <div class="loader-ring" aria-hidden="true"></div>
+      <div class="loader-mark">
+        <img src="logo.png" alt="NesCola" class="loader-logo" />
+        <div class="loader-subtitle">Private ingredient house</div>
+      </div>
+      <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
+      <div class="loader-metrics" aria-live="polite">
+        <span class="loader-dot" aria-hidden="true"></span>
+        <span class="loader-pct" id="loader-pct">0%</span>
+        <span>Preparing experience</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress-bar"></div>
+  <div id="page-transition" aria-hidden="true">
+    <div class="transition-mark">
+      <span class="mark-line"></span>
+      <span>NesCola</span>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Ingredients</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Ingredients</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background:linear-gradient(135deg,#0a0f28 0%,#1b2a6b 50%,#2d5a1b 100%);"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Contact</span>
+      </div>
+      <h1 class="page-hero-title reveal-clip">Let's <em>Create</em><br />Something Great</h1>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-section-inner">
+      <div class="contact-info reveal-left">
+        <p class="section-label">Get in Touch</p>
+        <h3>We'd Love to<br />Hear From You</h3>
+        <p>Whether you're looking to source a specific ingredient, need a custom development project, or simply want to learn more about what NesCola can offer — our team of specialists is ready to help.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Headquarters</strong>
+              <span>Turkmenistan, Ahal region, Ak bugday district, Magtymguly village</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.05 2.22 2 2 0 012 .05h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <span>+993 12 23114, +993 12 23115</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>General Enquiries</strong>
+              <span>info@nescola.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form reveal-right" data-delay="150">
+        <h3>Send Us a Message</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Marcus" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Hollander" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your Beverage Brand" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Enquiry Type</label>
+            <select id="subject" name="subject">
+              <option value="">Select an enquiry type</option>
+              <option>Request Product Sample</option>
+              <option>Custom R&amp;D Project</option>
+              <option>Pricing &amp; MOQ</option>
+              <option>Technical Documentation</option>
+              <option>Partnership Opportunities</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project, the ingredients you're looking for, or any questions you have…" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map-style section -->
+  <section style="padding:0;height:320px;background:var(--navy-dark);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;opacity:0.07;background:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-rule='evenodd'%3E%3Ccircle cx='40' cy='40' r='1'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+    <!-- World dots mockup -->
+    <div style="position:relative;z-index:1;text-align:center;">
+      <p style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-light);margin-bottom:16px;">Our Global Footprint</p>
+      <p style="font-family:var(--font-serif);font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--white);line-height:1.2;">Supplying Ingredients to<br /><em style="color:var(--green-light);">60+ Countries</em> Worldwide</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:120px 60px;background:var(--cream);">
+    <div style="max-width:700px;margin:0 auto;">
+      <div class="reveal" style="margin-bottom:60px;">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title">Common <em>Questions</em></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        <div class="sustain-pillar reveal">
+          <div class="pillar-num">Q</div>
+          <div class="pillar-content">
+            <h4>What is your minimum order quantity?</h4>
+            <p>For standard catalogue ingredients, MOQ starts at 25kg. For custom developments and prototyping, we offer 1–5kg R&D quantities. Contact our sales team for exact pricing.</p>
+          </div>
+        </div>
+
+        <div class="sustain-pillar reveal" data-delay="100">
+          <div class="pillar-num">Q</div>
+          <div class="pillar-content">
+            <h4>Do you offer sample kits?</h4>
+            <p>Yes — we offer complimentary sample kits (up to 5 ingredients, 100g each) to qualified beverage manufacturers. Use the contact form above or email samples@nescola.com.</p>
+          </div>
+        </div>
+
+        <div class="sustain-pillar reveal" data-delay="200">
+          <div class="pillar-num">Q</div>
+          <div class="pillar-content">
+            <h4>Are your ingredients Organic/Non-GMO certified?</h4>
+            <p>Over 70% of our portfolio carries EU Organic, USDA Organic, or Non-GMO Project certification. Certificates are available on request through our quality portal.</p>
+          </div>
+        </div>
+
+        <div class="sustain-pillar reveal" data-delay="300">
+          <div class="pillar-num">Q</div>
+          <div class="pillar-content">
+            <h4>How long does custom ingredient development take?</h4>
+            <p>Typical custom projects take 8–16 weeks from brief to pilot-scale sample approval, depending on complexity. Our R&D team will provide a detailed project timeline at kick-off.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-footer separator -->
+  <section class="pre-footer" aria-hidden="true">
+    <div class="pre-footer-inner">
+      <span class="pre-footer-line"></span>
+      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-line"></span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="NesCola" />
+        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="igG" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#feda75"/>
+                  <stop offset="0.28" stop-color="#fa7e1e"/>
+                  <stop offset="0.55" stop-color="#d62976"/>
+                  <stop offset="0.78" stop-color="#962fbf"/>
+                  <stop offset="1" stop-color="#4f5bd5"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#igG)" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Z"/>
+              <path fill="#fff" fill-opacity="0.92" d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.71 4.71 0 0 0 12 7.3Zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3Zm5.35-7.98a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="ttC" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#25F4EE"/>
+                  <stop offset="1" stop-color="#FE2C55"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#ttC)" d="M13.6 2h2.2c.2 2 1.4 3.8 3.2 4.7 1 .5 2 .8 3 .8v2.2c-1.8.1-3.5-.4-5-1.4v7.2c0 3.4-2.8 6.2-6.2 6.2S5.6 19 5.6 15.6s2.8-6.2 6.2-6.2c.4 0 .8 0 1.2.1v2.4c-.4-.2-.8-.2-1.2-.2-2.1 0-3.9 1.7-3.9 3.9S9.7 19.5 11.8 19.5s3.9-1.7 3.9-3.9V2Z"/>
+              <path fill="#fff" fill-opacity="0.18" d="M15.8 2c.2 2 1.4 3.8 3.2 4.7v2.2c-1.8-.3-3.4-1.2-4.4-2.6V2h1.2Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Ingredients</h5>
+        <ul>
+          <li><a href="products.html">Botanical Extracts</a></li>
+          <li><a href="products.html">Flavor Systems</a></li>
+          <li><a href="products.html">Functional Compounds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="contact.html">Request Sample</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

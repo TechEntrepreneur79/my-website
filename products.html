@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingredients – NesCola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-stack">
+      <div class="loader-ring" aria-hidden="true"></div>
+      <div class="loader-mark">
+        <img src="logo.png" alt="NesCola" class="loader-logo" />
+        <div class="loader-subtitle">Private ingredient house</div>
+      </div>
+      <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
+      <div class="loader-metrics" aria-live="polite">
+        <span class="loader-dot" aria-hidden="true"></span>
+        <span class="loader-pct" id="loader-pct">0%</span>
+        <span>Preparing experience</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress-bar"></div>
+  <div id="page-transition" aria-hidden="true">
+    <div class="transition-mark">
+      <span class="mark-line"></span>
+      <span>NesCola</span>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Ingredients</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Ingredients</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Ingredients</span>
+      </div>
+      <h1 class="page-hero-title reveal-clip">Our <em>Ingredient</em><br />Portfolio</h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="products-intro">
+    <div class="products-intro-inner reveal">
+      <div>
+        <p class="section-label">1,200+ Ingredients</p>
+        <h2 class="section-title">Everything You Need to<br /><em>Perfect</em> Your Recipe</h2>
+      </div>
+      <p class="products-intro-text">
+        From single-origin botanical extracts to precisely engineered multi-component flavor systems, NesCola's catalogue gives beverage developers an unrivalled toolkit for innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Turnkey block (top of list) -->
+  <section class="turnkey-section">
+    <div class="turnkey-card reveal-blur">
+      <div>
+        <p class="section-label">Turnkey solutions</p>
+        <h2 class="section-title">Turnkey <em>ingredients</em> for you</h2>
+        <p class="turnkey-text">
+          Need speed without sacrificing quality? Our turnkey ingredient systems arrive application-ready — pre-balanced, stability-tested, and supported with documentation so your team can move from concept to pilot faster.
+        </p>
+        <div class="turnkey-actions">
+          <a href="contact.html" class="btn-primary">
+            Contact Us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="turnkey-points reveal" data-delay="120">
+        <ul class="turnkey-list">
+          <li><strong>Ready-to-use blends</strong> for cola bases, citrus stacks, mineral profiles, and antioxidant complexes.</li>
+          <li><strong>Stability &amp; regulatory support</strong> with usage rates, allergen statements, and region compliance notes.</li>
+          <li><strong>Fast sampling</strong> for R&amp;D plus scalable supply with predictable lead times.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <div class="products-filter">
+    <button class="filter-btn active" data-filter="all">All Categories</button>
+    <button class="filter-btn" data-filter="botanical">Botanical Extracts</button>
+    <button class="filter-btn" data-filter="flavor">Flavor Systems</button>
+    <button class="filter-btn" data-filter="functional">Functional</button>
+    <button class="filter-btn" data-filter="mineral">Minerals &amp; Salts</button>
+    <button class="filter-btn" data-filter="antioxidant">Antioxidants</button>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="products-full">
+
+    <!-- Botanical Extracts -->
+    <div class="product-card reveal" data-category="botanical">
+      <div class="product-card-visual">
+        <div class="product-card-bg bg-botanicals" style="align-items:center;justify-content:center;"><span class="product-icon">🌿</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Botanical Extracts</div>
+        <h3 class="product-card-title">Hop Flower Extract NC-100</h3>
+        <p class="product-card-desc">Full-spectrum liquid hop extract capturing alpha acids, beta acids, and essential oils. Ideal for craft beer, hop water, and botanical spirits.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="botanical" data-delay="100">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#1a2a0a,#3a5a1a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🍃</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Botanical Extracts</div>
+        <h3 class="product-card-title">Green Tea Concentrate GT-250</h3>
+        <p class="product-card-desc">High-catechin green tea concentrate from single-estate Japanese cultivars. Clean, umami-forward profile with natural caffeine.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="botanical" data-delay="200">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#2a0a0a,#6a1a1a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🌹</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Botanical Extracts</div>
+        <h3 class="product-card-title">Hibiscus Flower Extract HB-80</h3>
+        <p class="product-card-desc">Vivid deep-red hibiscus extract with tart, cranberry-like complexity. Clean-label natural colour and flavor in one ingredient.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Flavor Systems -->
+    <div class="product-card reveal" data-category="flavor">
+      <div class="product-card-visual">
+        <div class="product-card-bg bg-extracts" style="align-items:center;justify-content:center;"><span class="product-icon">🍋</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Flavor Systems</div>
+        <h3 class="product-card-title">Citrus Cascade CF-400</h3>
+        <p class="product-card-desc">Six-citrus flavor system — lemon, lime, grapefruit, yuzu, bergamot, and blood orange — engineered for hard seltzers and RTD cocktails.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="flavor" data-delay="100">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#1a0a2a,#4a1a6a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🫐</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Flavor Systems</div>
+        <h3 class="product-card-title">Berry Noir BN-320</h3>
+        <p class="product-card-desc">Deep, jammy dark berry profile — elderberry, blackcurrant, and açaí — with natural tannin structure for premium soft drinks.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="flavor" data-delay="200">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#1a1a0a,#4a4a1a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🌾</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Flavor Systems</div>
+        <h3 class="product-card-title">Grain &amp; Smoke GS-150</h3>
+        <p class="product-card-desc">Artisan malt and cold-smoked cereal flavor system for non-alcoholic spirits and craft cola — adds depth and authenticity.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Functional -->
+    <div class="product-card reveal" data-category="functional">
+      <div class="product-card-visual">
+        <div class="product-card-bg bg-functional" style="align-items:center;justify-content:center;"><span class="product-icon">⚡</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Functional</div>
+        <h3 class="product-card-title">AdaptaBlend AB-200</h3>
+        <p class="product-card-desc">Clinically-dosed adaptogen complex — ashwagandha, rhodiola, and lion's mane — optimized for beverage stability and bioavailability.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="functional" data-delay="100">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🧠</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Functional</div>
+        <h3 class="product-card-title">FocusFlow FF-180</h3>
+        <p class="product-card-desc">Nootropic blend featuring L-theanine, phosphatidylserine, and bacopa extract for cognitive-support beverages — tasteless and soluble.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Minerals -->
+    <div class="product-card reveal" data-category="mineral">
+      <div class="product-card-visual">
+        <div class="product-card-bg bg-minerals" style="align-items:center;justify-content:center;"><span class="product-icon">💎</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Minerals &amp; Salts</div>
+        <h3 class="product-card-title">AquaZen™ Mineral Profile</h3>
+        <p class="product-card-desc">Precision mineral blend — magnesium, potassium, calcium, and trace elements — recreating the taste profile of legendary natural spring waters.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Antioxidants -->
+    <div class="product-card reveal" data-category="antioxidant">
+      <div class="product-card-visual">
+        <div class="product-card-bg bg-antioxidants" style="align-items:center;justify-content:center;"><span class="product-icon">✨</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Antioxidants</div>
+        <h3 class="product-card-title">PolyPlex AOX-300</h3>
+        <p class="product-card-desc">Stabilized polyphenol complex from grape seed, green tea, and pomegranate — high ORAC value, beverage-compatible, clean-tasting.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="antioxidant" data-delay="100">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#2a1a0a,#6a3a10);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🫒</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Antioxidants</div>
+        <h3 class="product-card-title">OleoGuard OG-120</h3>
+        <p class="product-card-desc">Hydroxytyrosol-rich olive polyphenol extract for premium health beverages. Natural shelf-life extension and potent anti-inflammatory properties.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <div class="product-card reveal" data-category="functional" data-delay="200">
+      <div class="product-card-visual">
+        <div class="product-card-bg" style="background:linear-gradient(135deg,#0a2a1a,#1a5a3a);align-items:center;justify-content:center;display:flex;"><span class="product-icon">🌊</span></div>
+        <div class="product-card-overlay"></div>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-tag">Functional</div>
+        <h3 class="product-card-title">ElectroCore EC-240</h3>
+        <p class="product-card-desc">Sports-optimized electrolyte system with coconut water solids, sea salt, and chelated minerals for superior hydration beverages.</p>
+        <a href="contact.html" class="product-card-link">Request Sample <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Custom Solutions Band -->
+  <section class="feature-band" style="height:50vh;">
+    <div class="feature-band-bg"></div>
+    <div class="feature-band-overlay"></div>
+    <div class="feature-band-content">
+      <p class="section-label reveal">Custom R&amp;D</p>
+      <h2 class="section-title reveal" data-delay="100">Can't Find Exactly<br />What You Need? <em>Let's Build It.</em></h2>
+      <p class="reveal" data-delay="200">Our R&amp;D team specialises in bespoke ingredient development — minimum quantities from 1kg for prototyping, full scale-up support.</p>
+      <a href="contact.html" class="btn-primary reveal" data-delay="300" style="margin:0 auto;">
+        Start a Custom Project
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Pre-footer separator -->
+  <section class="pre-footer" aria-hidden="true">
+    <div class="pre-footer-inner">
+      <span class="pre-footer-line"></span>
+      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-line"></span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="NesCola" />
+        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="igG" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#feda75"/>
+                  <stop offset="0.28" stop-color="#fa7e1e"/>
+                  <stop offset="0.55" stop-color="#d62976"/>
+                  <stop offset="0.78" stop-color="#962fbf"/>
+                  <stop offset="1" stop-color="#4f5bd5"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#igG)" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Z"/>
+              <path fill="#fff" fill-opacity="0.92" d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.71 4.71 0 0 0 12 7.3Zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3Zm5.35-7.98a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="ttC" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#25F4EE"/>
+                  <stop offset="1" stop-color="#FE2C55"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#ttC)" d="M13.6 2h2.2c.2 2 1.4 3.8 3.2 4.7 1 .5 2 .8 3 .8v2.2c-1.8.1-3.5-.4-5-1.4v7.2c0 3.4-2.8 6.2-6.2 6.2S5.6 19 5.6 15.6s2.8-6.2 6.2-6.2c.4 0 .8 0 1.2.1v2.4c-.4-.2-.8-.2-1.2-.2-2.1 0-3.9 1.7-3.9 3.9S9.7 19.5 11.8 19.5s3.9-1.7 3.9-3.9V2Z"/>
+              <path fill="#fff" fill-opacity="0.18" d="M15.8 2c.2 2 1.4 3.8 3.2 4.7v2.2c-1.8-.3-3.4-1.2-4.4-2.6V2h1.2Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Ingredients</h5>
+        <ul>
+          <li><a href="products.html">Botanical Extracts</a></li>
+          <li><a href="products.html">Flavor Systems</a></li>
+          <li><a href="products.html">Functional Compounds</a></li>
+          <li><a href="products.html">Custom Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="contact.html">Request Sample</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability – NesCola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-stack">
+      <div class="loader-ring" aria-hidden="true"></div>
+      <div class="loader-mark">
+        <img src="logo.png" alt="NesCola" class="loader-logo" />
+        <div class="loader-subtitle">Private ingredient house</div>
+      </div>
+      <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
+      <div class="loader-metrics" aria-live="polite">
+        <span class="loader-dot" aria-hidden="true"></span>
+        <span class="loader-pct" id="loader-pct">0%</span>
+        <span>Preparing experience</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress-bar"></div>
+  <div id="page-transition" aria-hidden="true">
+    <div class="transition-mark">
+      <span class="mark-line"></span>
+      <span>NesCola</span>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Ingredients</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Ingredients</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="height:65vh;">
+    <div class="page-hero-bg" style="background:linear-gradient(135deg,#0a2010 0%,#1a4a20 50%,#2d5a1b 100%);"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Sustainability</span>
+      </div>
+      <h1 class="page-hero-title reveal-clip">
+        Our Planet,<br />Our <em>Responsibility</em>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section style="padding:120px 60px;background:var(--white);">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center;" class="reveal">
+      <div>
+        <p class="section-label">Our Commitment</p>
+        <h2 class="section-title">Regenerative<br /><em>At Every Step</em></h2>
+      </div>
+      <div>
+        <p style="font-size:17px;line-height:1.85;color:var(--gray);margin-bottom:20px;">Sustainability at NesCola is not a campaign — it is the operating model. From the farms where our botanicals are grown to the packaging that leaves our facilities, every decision is made with long-term planetary health in mind.</p>
+        <p style="font-size:17px;line-height:1.85;color:var(--gray);">We publish a full Annual Impact Report and have our carbon accounting independently verified by Bureau Veritas each year.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Stats -->
+  <section class="stats-section">
+    <div class="stat-item reveal" data-delay="0">
+      <div class="stat-num" data-count="100" data-suffix="%">100<span>%</span></div>
+      <div class="stat-label">Renewable Energy</div>
+    </div>
+    <div class="stat-item reveal" data-delay="100">
+      <div class="stat-num" data-count="98" data-suffix="%">98<span>%</span></div>
+      <div class="stat-label">Waste Repurposed</div>
+    </div>
+    <div class="stat-item reveal" data-delay="200">
+      <div class="stat-num" data-count="180" data-suffix="+">180<span>+</span></div>
+      <div class="stat-label">Certified Farm Partners</div>
+    </div>
+    <div class="stat-item reveal" data-delay="300">
+      <div class="stat-num" data-count="2030" data-suffix="">2030<span></span></div>
+      <div class="stat-label">Net-Zero Target Year</div>
+    </div>
+  </section>
+
+  <!-- Three Pillars -->
+  <section class="sustain-hero-section" style="background:var(--cream);">
+    <div class="reveal">
+      <p class="section-label">Our Framework</p>
+      <h2 class="section-title">Three Pillars of <em>Impact</em></h2>
+    </div>
+    <div class="sustain-commitment" style="margin-top:70px;">
+      <div class="commitment-card reveal" data-delay="0">
+        <div class="commitment-icon">🌱</div>
+        <h3 class="commitment-title">Land &amp; Biodiversity</h3>
+        <p class="commitment-text">We work exclusively with farmers practicing regenerative agriculture — cover cropping, no-till cultivation, and integrated pest management. We have committed $12M to habitat restoration projects through our Green Root Foundation.</p>
+      </div>
+      <div class="commitment-card reveal" data-delay="100">
+        <div class="commitment-icon">💨</div>
+        <h3 class="commitment-title">Climate &amp; Energy</h3>
+        <p class="commitment-text">All five NesCola processing facilities transitioned to 100% renewable energy between 2021–2024. We measure and offset Scope 1, 2, and 3 emissions, with a verified 42% reduction since 2019 and a clear roadmap to net-zero by 2030.</p>
+      </div>
+      <div class="commitment-card reveal" data-delay="200">
+        <div class="commitment-icon">🤝</div>
+        <h3 class="commitment-title">People &amp; Communities</h3>
+        <p class="commitment-text">Our Farmer Partnership Programme guarantees above-market prices and provides technical training to 180+ growing cooperatives. In 2025 we funded clean water access for three rural communities in our sourcing regions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section style="padding:120px 60px;background:var(--white);">
+    <div class="reveal" style="margin-bottom:70px;">
+      <p class="section-label">Our Journey</p>
+      <h2 class="section-title">Sustainability <em>Milestones</em></h2>
+    </div>
+    <div style="position:relative;max-width:800px;margin:0 auto;">
+      <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--light-gray);transform:translateX(-50%);"></div>
+      <!-- Timeline items -->
+      <div style="display:flex;gap:40px;margin-bottom:48px;align-items:center;" class="reveal">
+        <div style="flex:1;text-align:right;">
+          <strong style="font-family:var(--font-serif);font-size:20px;color:var(--navy);">2019</strong>
+          <p style="font-size:14px;color:var(--gray);margin-top:6px;line-height:1.6;">Launched our first sustainability audit and set science-based targets.</p>
+        </div>
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--green-mid);flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--green-mid);position:relative;z-index:1;"></div>
+        <div style="flex:1;"></div>
+      </div>
+      <div style="display:flex;gap:40px;margin-bottom:48px;align-items:center;" class="reveal" data-delay="100">
+        <div style="flex:1;"></div>
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--green-mid);flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--green-mid);position:relative;z-index:1;"></div>
+        <div style="flex:1;">
+          <strong style="font-family:var(--font-serif);font-size:20px;color:var(--navy);">2021</strong>
+          <p style="font-size:14px;color:var(--gray);margin-top:6px;line-height:1.6;">First facility goes 100% renewable energy. Green Root Foundation established.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:40px;margin-bottom:48px;align-items:center;" class="reveal" data-delay="200">
+        <div style="flex:1;text-align:right;">
+          <strong style="font-family:var(--font-serif);font-size:20px;color:var(--navy);">2023</strong>
+          <p style="font-size:14px;color:var(--gray);margin-top:6px;line-height:1.6;">Zero-waste extraction patent awarded. 150 farms certified regenerative.</p>
+        </div>
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--green-mid);flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--green-mid);position:relative;z-index:1;"></div>
+        <div style="flex:1;"></div>
+      </div>
+      <div style="display:flex;gap:40px;margin-bottom:48px;align-items:center;" class="reveal" data-delay="300">
+        <div style="flex:1;"></div>
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--green-mid);flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--green-mid);position:relative;z-index:1;"></div>
+        <div style="flex:1;">
+          <strong style="font-family:var(--font-serif);font-size:20px;color:var(--navy);">2024</strong>
+          <p style="font-size:14px;color:var(--gray);margin-top:6px;line-height:1.6;">All five facilities carbon-neutral certified. 42% total Scope 1-3 reduction vs 2019.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:40px;align-items:center;" class="reveal" data-delay="400">
+        <div style="flex:1;text-align:right;">
+          <strong style="font-family:var(--font-serif);font-size:20px;color:var(--green-mid);">2030</strong>
+          <p style="font-size:14px;color:var(--gray);margin-top:6px;line-height:1.6;">Target: Full net-zero value chain. 250+ regenerative farm partners.</p>
+        </div>
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--green-light);flex-shrink:0;border:3px solid var(--white);box-shadow:0 0 0 2px var(--green-light);position:relative;z-index:1;"></div>
+        <div style="flex:1;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <span class="section-label reveal">Impact Report</span>
+    <h2 class="section-title reveal" data-delay="100">Read Our Full<br /><em>Annual Impact Report</em></h2>
+    <p class="reveal" data-delay="200">Download our comprehensive 2025 sustainability report including third-party carbon verification, biodiversity metrics, and farmer wellbeing data.</p>
+    <div class="cta-actions reveal" data-delay="300">
+      <a href="contact.html" class="btn-white">Download Report</a>
+      <a href="contact.html" class="btn-outline-white">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Pre-footer separator -->
+  <section class="pre-footer" aria-hidden="true">
+    <div class="pre-footer-inner">
+      <span class="pre-footer-line"></span>
+      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-line"></span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="NesCola" />
+        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="igG" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#feda75"/>
+                  <stop offset="0.28" stop-color="#fa7e1e"/>
+                  <stop offset="0.55" stop-color="#d62976"/>
+                  <stop offset="0.78" stop-color="#962fbf"/>
+                  <stop offset="1" stop-color="#4f5bd5"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#igG)" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Z"/>
+              <path fill="#fff" fill-opacity="0.92" d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.71 4.71 0 0 0 12 7.3Zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3Zm5.35-7.98a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="ttC" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#25F4EE"/>
+                  <stop offset="1" stop-color="#FE2C55"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#ttC)" d="M13.6 2h2.2c.2 2 1.4 3.8 3.2 4.7 1 .5 2 .8 3 .8v2.2c-1.8.1-3.5-.4-5-1.4v7.2c0 3.4-2.8 6.2-6.2 6.2S5.6 19 5.6 15.6s2.8-6.2 6.2-6.2c.4 0 .8 0 1.2.1v2.4c-.4-.2-.8-.2-1.2-.2-2.1 0-3.9 1.7-3.9 3.9S9.7 19.5 11.8 19.5s3.9-1.7 3.9-3.9V2Z"/>
+              <path fill="#fff" fill-opacity="0.18" d="M15.8 2c.2 2 1.4 3.8 3.2 4.7v2.2c-1.8-.3-3.4-1.2-4.4-2.6V2h1.2Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Ingredients</h5>
+        <ul>
+          <li><a href="products.html">Botanical Extracts</a></li>
+          <li><a href="products.html">Flavor Systems</a></li>
+          <li><a href="products.html">Functional Compounds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="contact.html">Request Sample</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
