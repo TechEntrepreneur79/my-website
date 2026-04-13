@@ -591,6 +591,11 @@ body.is-transitioning .transition-mark {
 /* ---- Section Foundations ---- */
 section { position: relative; }
 
+/* Utility: consistent section padding (fixes mobile overflow) */
+.pad-section {
+  padding: 120px 60px;
+}
+
 .section-label {
   font-size: 10px; font-weight: 600;
   letter-spacing: 0.22em; text-transform: uppercase;
@@ -1632,6 +1637,78 @@ footer::after {
 }
 .commitment-text { font-size: 15px; line-height: 1.75; color: var(--gray); }
 
+/* Sustainability intro + timeline (mobile-safe) */
+.sustain-intro-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+.sustain-intro-text {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+.sustain-intro-text:last-child { margin-bottom: 0; }
+
+.timeline-section .timeline-head {
+  max-width: 1200px;
+  margin: 0 auto 70px;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--light-gray);
+  transform: translateX(-50%);
+}
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-side { flex: 1; min-width: 0; }
+.timeline-side.right { text-align: right; }
+.timeline-year {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--navy);
+}
+.timeline-year.highlight { color: var(--green-mid); }
+.timeline-text {
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--green-mid);
+  flex-shrink: 0;
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--green-mid);
+  position: relative;
+  z-index: 1;
+}
+.timeline-dot.accent {
+  background: var(--green-light);
+  box-shadow: 0 0 0 2px var(--green-light);
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
@@ -1658,6 +1735,7 @@ footer::after {
   .intro-section, .products-section, .stats-section, .sustain-section,
   .news-section, .partners-section, .cta-section, .sustain-hero-section,
   .about-story, .team-section, .contact-section { padding: 80px 24px; }
+  .pad-section { padding: 80px 24px; }
   .products-grid, .products-full { grid-template-columns: 1fr; }
   .stats-section { grid-template-columns: 1fr 1fr; }
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -1680,6 +1758,11 @@ footer::after {
   .turnkey-section { padding: 10px 24px 0; }
   .turnkey-card { grid-template-columns: 1fr; gap: 28px; padding: 36px 22px; }
   .turnkey-points { padding-left: 0; border-left: 0; border-top: 1px solid rgba(0,0,0,0.07); padding-top: 22px; }
+  .sustain-intro-grid { grid-template-columns: 1fr; gap: 28px; }
+  .timeline-line { left: 10px; transform: none; }
+  .timeline-item { position: relative; flex-direction: column; align-items: flex-start; gap: 14px; margin-left: 10px; padding-left: 24px; }
+  .timeline-side, .timeline-side.right { text-align: left; }
+  .timeline-dot { position: absolute; left: 2px; margin-top: 6px; }
 }
 
 /* ---- Progress bar ---- */
