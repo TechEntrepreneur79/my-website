@@ -17,13 +17,13 @@
       <div class="loader-ring" aria-hidden="true"></div>
       <div class="loader-mark">
         <img src="logo.png" alt="NesCola" class="loader-logo" />
-        <div class="loader-subtitle">Private ingredient house</div>
+        <div class="loader-subtitle" data-i18n="loader.subtitle">Private ingredient house</div>
       </div>
       <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
       <div class="loader-metrics" aria-live="polite">
         <span class="loader-dot" aria-hidden="true"></span>
         <span class="loader-pct" id="loader-pct">0%</span>
-        <span>Preparing experience</span>
+        <span data-i18n="loader.metrics">Preparing experience</span>
       </div>
     </div>
   </div>
@@ -39,22 +39,27 @@
   <div class="cursor-follower"></div>
 
   <nav class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Ingredients</a>
-    <a href="sustainability.html">Sustainability</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+    <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
   <header id="navbar">
     <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Ingredients</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+      <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact Us</a>
     </nav>
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-btn" data-lang="tk">TK</button>
+    </div>
     <div class="hamburger"><span></span><span></span><span></span></div>
   </header>
 
@@ -63,9 +68,9 @@
     <div class="page-hero-bg" style="background:linear-gradient(135deg,#0a2010 0%,#1a4a20 50%,#2d5a1b 100%);"></div>
     <div class="page-hero-content">
       <div class="page-hero-breadcrumb">
-        <a href="index.html">Home</a><span>/</span><span>Sustainability</span>
+        <a href="index.html" data-i18n="sus.hero.breadcrumb_home">Home</a><span>/</span><span data-i18n="sus.hero.breadcrumb_sus">Sustainability</span>
       </div>
-      <h1 class="page-hero-title reveal-clip">
+      <h1 class="page-hero-title reveal-clip" data-i18n-html="sus.hero.title_html">
         Our Planet,<br />Our <em>Responsibility</em>
       </h1>
     </div>
@@ -75,12 +80,12 @@
   <section class="pad-section" style="background:var(--white);">
     <div class="sustain-intro-grid reveal">
       <div>
-        <p class="section-label">Our Commitment</p>
-        <h2 class="section-title">Regenerative<br /><em>At Every Step</em></h2>
+        <p class="section-label" data-i18n="sus.intro.label">Our Commitment</p>
+        <h2 class="section-title" data-i18n-html="sus.intro.title_html">Regenerative<br /><em>At Every Step</em></h2>
       </div>
       <div>
-        <p class="sustain-intro-text">Sustainability at NesCola is not a campaign — it is the operating model. From the farms where our botanicals are grown to the packaging that leaves our facilities, every decision is made with long-term planetary health in mind.</p>
-        <p class="sustain-intro-text">We publish a full Annual Impact Report and have our carbon accounting independently verified by Bureau Veritas each year.</p>
+        <p class="sustain-intro-text" data-i18n="sus.intro.p1">Sustainability at NesCola is not a campaign — it is the operating model. From the farms where our botanicals are grown to the packaging that leaves our facilities, every decision is made with long-term planetary health in mind.</p>
+        <p class="sustain-intro-text" data-i18n="sus.intro.p2">We publish a full Annual Impact Report and have our carbon accounting independently verified by Bureau Veritas each year.</p>
       </div>
     </div>
   </section>
@@ -89,43 +94,43 @@
   <section class="stats-section">
     <div class="stat-item reveal" data-delay="0">
       <div class="stat-num" data-count="100" data-suffix="%">100<span>%</span></div>
-      <div class="stat-label">Renewable Energy</div>
+      <div class="stat-label" data-i18n="sus.stats.renew">Renewable Energy</div>
     </div>
     <div class="stat-item reveal" data-delay="100">
       <div class="stat-num" data-count="98" data-suffix="%">98<span>%</span></div>
-      <div class="stat-label">Waste Repurposed</div>
+      <div class="stat-label" data-i18n="sus.stats.waste">Waste Repurposed</div>
     </div>
     <div class="stat-item reveal" data-delay="200">
       <div class="stat-num" data-count="180" data-suffix="+">180<span>+</span></div>
-      <div class="stat-label">Certified Farm Partners</div>
+      <div class="stat-label" data-i18n="sus.stats.farms">Certified Farm Partners</div>
     </div>
     <div class="stat-item reveal" data-delay="300">
       <div class="stat-num" data-count="2030" data-suffix="">2030<span></span></div>
-      <div class="stat-label">Net-Zero Target Year</div>
+      <div class="stat-label" data-i18n="sus.stats.target">Net-Zero Target Year</div>
     </div>
   </section>
 
   <!-- Three Pillars -->
   <section class="sustain-hero-section" style="background:var(--cream);">
     <div class="reveal">
-      <p class="section-label">Our Framework</p>
-      <h2 class="section-title">Three Pillars of <em>Impact</em></h2>
+      <p class="section-label" data-i18n="sus.pillars.label">Our Framework</p>
+      <h2 class="section-title" data-i18n-html="sus.pillars.title_html">Three Pillars of <em>Impact</em></h2>
     </div>
     <div class="sustain-commitment" style="margin-top:70px;">
       <div class="commitment-card reveal" data-delay="0">
         <div class="commitment-icon">🌱</div>
-        <h3 class="commitment-title">Land &amp; Biodiversity</h3>
-        <p class="commitment-text">We work exclusively with farmers practicing regenerative agriculture — cover cropping, no-till cultivation, and integrated pest management. We have committed $12M to habitat restoration projects through our Green Root Foundation.</p>
+        <h3 class="commitment-title" data-i18n="sus.pillar1.title">Land &amp; Biodiversity</h3>
+        <p class="commitment-text" data-i18n="sus.pillar1.p">We work exclusively with farmers practicing regenerative agriculture — cover cropping, no-till cultivation, and integrated pest management. We have committed $12M to habitat restoration projects through our Green Root Foundation.</p>
       </div>
       <div class="commitment-card reveal" data-delay="100">
         <div class="commitment-icon">💨</div>
-        <h3 class="commitment-title">Climate &amp; Energy</h3>
-        <p class="commitment-text">All five NesCola processing facilities transitioned to 100% renewable energy between 2021–2024. We measure and offset Scope 1, 2, and 3 emissions, with a verified 42% reduction since 2019 and a clear roadmap to net-zero by 2030.</p>
+        <h3 class="commitment-title" data-i18n="sus.pillar2.title">Climate &amp; Energy</h3>
+        <p class="commitment-text" data-i18n="sus.pillar2.p">All five NesCola processing facilities transitioned to 100% renewable energy between 2021–2024. We measure and offset Scope 1, 2, and 3 emissions, with a verified 42% reduction since 2019 and a clear roadmap to net-zero by 2030.</p>
       </div>
       <div class="commitment-card reveal" data-delay="200">
         <div class="commitment-icon">🤝</div>
-        <h3 class="commitment-title">People &amp; Communities</h3>
-        <p class="commitment-text">Our Farmer Partnership Programme guarantees above-market prices and provides technical training to 180+ growing cooperatives. In 2025 we funded clean water access for three rural communities in our sourcing regions.</p>
+        <h3 class="commitment-title" data-i18n="sus.pillar3.title">People &amp; Communities</h3>
+        <p class="commitment-text" data-i18n="sus.pillar3.p">Our Farmer Partnership Programme guarantees above-market prices and provides technical training to 180+ growing cooperatives. In 2025 we funded clean water access for three rural communities in our sourcing regions.</p>
       </div>
     </div>
   </section>
@@ -133,8 +138,8 @@
   <!-- Timeline -->
   <section class="pad-section timeline-section" style="background:var(--white);">
     <div class="reveal timeline-head">
-      <p class="section-label">Our Journey</p>
-      <h2 class="section-title">Sustainability <em>Milestones</em></h2>
+      <p class="section-label" data-i18n="sus.timeline.label">Our Journey</p>
+      <h2 class="section-title" data-i18n-html="sus.timeline.title_html">Sustainability <em>Milestones</em></h2>
     </div>
     <div class="timeline">
       <div class="timeline-line" aria-hidden="true"></div>
@@ -142,7 +147,7 @@
       <div class="timeline-item reveal">
         <div class="timeline-side right">
           <strong class="timeline-year">2019</strong>
-          <p class="timeline-text">Launched our first sustainability audit and set science-based targets.</p>
+          <p class="timeline-text" data-i18n="sus.timeline.2019">Launched our first sustainability audit and set science-based targets.</p>
         </div>
         <div class="timeline-dot" aria-hidden="true"></div>
         <div class="timeline-side"></div>
@@ -152,13 +157,13 @@
         <div class="timeline-dot" aria-hidden="true"></div>
         <div class="timeline-side">
           <strong class="timeline-year">2021</strong>
-          <p class="timeline-text">First facility goes 100% renewable energy. Green Root Foundation established.</p>
+          <p class="timeline-text" data-i18n="sus.timeline.2021">First facility goes 100% renewable energy. Green Root Foundation established.</p>
         </div>
       </div>
       <div class="timeline-item reveal" data-delay="200">
         <div class="timeline-side right">
           <strong class="timeline-year">2023</strong>
-          <p class="timeline-text">Zero-waste extraction patent awarded. 150 farms certified regenerative.</p>
+          <p class="timeline-text" data-i18n="sus.timeline.2023">Zero-waste extraction patent awarded. 150 farms certified regenerative.</p>
         </div>
         <div class="timeline-dot" aria-hidden="true"></div>
         <div class="timeline-side"></div>
@@ -168,13 +173,13 @@
         <div class="timeline-dot" aria-hidden="true"></div>
         <div class="timeline-side">
           <strong class="timeline-year">2024</strong>
-          <p class="timeline-text">All five facilities carbon-neutral certified. 42% total Scope 1-3 reduction vs 2019.</p>
+          <p class="timeline-text" data-i18n="sus.timeline.2024">All five facilities carbon-neutral certified. 42% total Scope 1-3 reduction vs 2019.</p>
         </div>
       </div>
       <div class="timeline-item reveal" data-delay="400">
         <div class="timeline-side right">
           <strong class="timeline-year highlight">2030</strong>
-          <p class="timeline-text">Target: Full net-zero value chain. 250+ regenerative farm partners.</p>
+          <p class="timeline-text" data-i18n="sus.timeline.2030">Target: Full net-zero value chain. 250+ regenerative farm partners.</p>
         </div>
         <div class="timeline-dot accent" aria-hidden="true"></div>
         <div class="timeline-side"></div>
@@ -184,12 +189,12 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <span class="section-label reveal">Impact Report</span>
-    <h2 class="section-title reveal" data-delay="100">Read Our Full<br /><em>Annual Impact Report</em></h2>
-    <p class="reveal" data-delay="200">Download our comprehensive 2025 sustainability report including third-party carbon verification, biodiversity metrics, and farmer wellbeing data.</p>
+    <span class="section-label reveal" data-i18n="sus.cta.label">Impact Report</span>
+    <h2 class="section-title reveal" data-delay="100" data-i18n-html="sus.cta.title_html">Read Our Full<br /><em>Annual Impact Report</em></h2>
+    <p class="reveal" data-delay="200" data-i18n="sus.cta.p">Download our comprehensive 2025 sustainability report including third-party carbon verification, biodiversity metrics, and farmer wellbeing data.</p>
     <div class="cta-actions reveal" data-delay="300">
-      <a href="contact.html" class="btn-white">Download Report</a>
-      <a href="contact.html" class="btn-outline-white">Contact Us</a>
+      <a href="contact.html" class="btn-white" data-i18n="sus.cta.primary">Download Report</a>
+      <a href="contact.html" class="btn-outline-white" data-i18n="sus.cta.secondary">Contact Us</a>
     </div>
   </section>
 
@@ -197,7 +202,7 @@
   <section class="pre-footer" aria-hidden="true">
     <div class="pre-footer-inner">
       <span class="pre-footer-line"></span>
-      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-kicker" data-i18n="prefooter.kicker">NesCola</span>
       <span class="pre-footer-line"></span>
     </div>
   </section>
@@ -206,7 +211,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="logo.png" alt="NesCola" />
-        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
+        <p data-i18n="products.footer.tagline">Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
         <div class="social-links">
           <a href="#" aria-label="Instagram">
             <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
@@ -238,34 +243,35 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Company</h5>
+        <h5 data-i18n="footer.company">Company</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="sustainability.html">Sustainability</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="about.html" data-i18n="footer.link.about">About Us</a></li>
+          <li><a href="sustainability.html" data-i18n="footer.link.sustain">Sustainability</a></li>
+          <li><a href="#" data-i18n="footer.link.careers">Careers</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Ingredients</h5>
+        <h5 data-i18n="footer.ingredients">Ingredients</h5>
         <ul>
-          <li><a href="products.html">Botanical Extracts</a></li>
-          <li><a href="products.html">Flavor Systems</a></li>
-          <li><a href="products.html">Functional Compounds</a></li>
+          <li><a href="products.html" data-i18n="footer.link.botanical">Botanical Extracts</a></li>
+          <li><a href="products.html" data-i18n="footer.link.flavor">Flavor Systems</a></li>
+          <li><a href="products.html" data-i18n="footer.link.functional">Functional Compounds</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Contact</h5>
+        <h5 data-i18n="footer.contact">Contact</h5>
         <ul>
-          <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Request Sample</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.touch">Get in Touch</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.sample">Request Sample</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <p data-i18n="footer.copy">© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Use</a>
+        <a href="#" data-i18n="footer.cookies">Cookie Settings</a>
       </div>
     </div>
   </footer>

@@ -17,13 +17,13 @@
       <div class="loader-ring" aria-hidden="true"></div>
       <div class="loader-mark">
         <img src="logo.png" alt="NesCola" class="loader-logo" />
-        <div class="loader-subtitle">Private ingredient house</div>
+        <div class="loader-subtitle" data-i18n="loader.subtitle">Private ingredient house</div>
       </div>
       <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
       <div class="loader-metrics" aria-live="polite">
         <span class="loader-dot" aria-hidden="true"></span>
         <span class="loader-pct" id="loader-pct">0%</span>
-        <span>Preparing experience</span>
+        <span data-i18n="loader.metrics">Preparing experience</span>
       </div>
     </div>
   </div>
@@ -39,22 +39,27 @@
   <div class="cursor-follower"></div>
 
   <nav class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Ingredients</a>
-    <a href="sustainability.html">Sustainability</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+    <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
   <header id="navbar">
     <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Ingredients</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+      <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact Us</a>
     </nav>
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-btn" data-lang="tk">TK</button>
+    </div>
     <div class="hamburger"><span></span><span></span><span></span></div>
   </header>
 
@@ -63,9 +68,9 @@
     <div class="page-hero-bg"></div>
     <div class="page-hero-content">
       <div class="page-hero-breadcrumb">
-        <a href="index.html">Home</a><span>/</span><span>About</span>
+        <a href="index.html" data-i18n="about.hero.breadcrumb_home">Home</a><span>/</span><span data-i18n="about.hero.breadcrumb_about">About</span>
       </div>
-      <h1 class="page-hero-title reveal-clip">
+      <h1 class="page-hero-title reveal-clip" data-i18n-html="about.hero.title_html">
         Our <em>Story</em>
       </h1>
     </div>
@@ -75,11 +80,11 @@
   <section class="about-story">
     <div class="about-story-inner">
       <div class="about-story-text reveal-left">
-        <p class="section-label">Since 2004</p>
-        <h2 class="section-title">A Passion for<br /><em>Pure Ingredients</em></h2>
-        <p>NesCola was founded in 2004 by a team of beverage scientists and botanical foragers who believed that the future of great drinks lay in the quality of what goes into them. Starting from a single extraction laboratory in Vienna, we have grown into a global ingredient house trusted by some of the world's most celebrated beverage brands.</p>
-        <p>Our philosophy is simple: nature provides extraordinary flavors. Our role is to capture, preserve, and deliver those flavors with uncompromising scientific precision and ethical responsibility.</p>
-        <p>Today, NesCola operates five world-class processing facilities across Europe and Asia, employs over 800 specialists, and sources from more than 40 countries — always with the same devotion to quality that has defined us from day one.</p>
+        <p class="section-label" data-i18n="about.story.label">Since 2004</p>
+        <h2 class="section-title" data-i18n-html="about.story.title_html">A Passion for<br /><em>Pure Ingredients</em></h2>
+        <p data-i18n="about.story.p1">NesCola was founded in 2004 by a team of beverage scientists and botanical foragers who believed that the future of great drinks lay in the quality of what goes into them. Starting from a single extraction laboratory in Vienna, we have grown into a global ingredient house trusted by some of the world's most celebrated beverage brands.</p>
+        <p data-i18n="about.story.p2">Our philosophy is simple: nature provides extraordinary flavors. Our role is to capture, preserve, and deliver those flavors with uncompromising scientific precision and ethical responsibility.</p>
+        <p data-i18n="about.story.p3">Today, NesCola operates five world-class processing facilities across Europe and Asia, employs over 800 specialists, and sources from more than 40 countries — always with the same devotion to quality that has defined us from day one.</p>
       </div>
       <div class="about-story-visual">
         <div class="about-story-visual-item reveal-right">
@@ -105,19 +110,19 @@
   <section class="stats-section">
     <div class="stat-item reveal" data-delay="0">
       <div class="stat-num" data-count="800" data-suffix="+">800<span>+</span></div>
-      <div class="stat-label">Team Members</div>
+      <div class="stat-label" data-i18n="about.stats.team">Team Members</div>
     </div>
     <div class="stat-item reveal" data-delay="100">
       <div class="stat-num" data-count="5" data-suffix="">5<span></span></div>
-      <div class="stat-label">Global Facilities</div>
+      <div class="stat-label" data-i18n="about.stats.facilities">Global Facilities</div>
     </div>
     <div class="stat-item reveal" data-delay="200">
       <div class="stat-num" data-count="40" data-suffix="+">40<span>+</span></div>
-      <div class="stat-label">Source Countries</div>
+      <div class="stat-label" data-i18n="about.stats.countries">Source Countries</div>
     </div>
     <div class="stat-item reveal" data-delay="300">
       <div class="stat-num" data-count="20" data-suffix=" Yrs">20<span> Yrs</span></div>
-      <div class="stat-label">of Excellence</div>
+      <div class="stat-label" data-i18n="about.stats.excellence">of Excellence</div>
     </div>
   </section>
 
@@ -125,24 +130,24 @@
   <section class="values-section">
     <div class="values-inner">
     <div style="max-width:700px;margin-bottom:70px;" class="reveal">
-      <p class="section-label">Our Values</p>
-      <h2 class="section-title">What <em>Drives</em> Us</h2>
+      <p class="section-label" data-i18n="about.values.label">Our Values</p>
+      <h2 class="section-title" data-i18n-html="about.values.title_html">What <em>Drives</em> Us</h2>
     </div>
     <div class="sustain-commitment">
       <div class="commitment-card reveal" data-delay="0">
         <div class="commitment-icon">🎯</div>
-        <h3 class="commitment-title">Precision</h3>
-        <p class="commitment-text">Every batch is measured to the milligram. Our analytical laboratories set the standard for botanical extract quality — consistent batch after batch.</p>
+        <h3 class="commitment-title" data-i18n="about.values.precision.title">Precision</h3>
+        <p class="commitment-text" data-i18n="about.values.precision.p">Every batch is measured to the milligram. Our analytical laboratories set the standard for botanical extract quality — consistent batch after batch.</p>
       </div>
       <div class="commitment-card reveal" data-delay="100">
         <div class="commitment-icon">🌍</div>
-        <h3 class="commitment-title">Responsibility</h3>
-        <p class="commitment-text">We build relationships with farming communities, not just supply chains. Fair wages, biodiversity protection, and regenerative agriculture are non-negotiable.</p>
+        <h3 class="commitment-title" data-i18n="about.values.resp.title">Responsibility</h3>
+        <p class="commitment-text" data-i18n="about.values.resp.p">We build relationships with farming communities, not just supply chains. Fair wages, biodiversity protection, and regenerative agriculture are non-negotiable.</p>
       </div>
       <div class="commitment-card reveal" data-delay="200">
         <div class="commitment-icon">💡</div>
-        <h3 class="commitment-title">Innovation</h3>
-        <p class="commitment-text">Our R&D team files 12+ patents per year. We invest 8% of revenue into fundamental research so our partners stay ahead of tomorrow's consumer trends.</p>
+        <h3 class="commitment-title" data-i18n="about.values.innov.title">Innovation</h3>
+        <p class="commitment-text" data-i18n="about.values.innov.p">Our R&D team files 12+ patents per year. We invest 8% of revenue into fundamental research so our partners stay ahead of tomorrow's consumer trends.</p>
       </div>
     </div>
     </div>
@@ -153,13 +158,13 @@
     <div class="feature-band-bg"></div>
     <div class="feature-band-overlay"></div>
     <div class="feature-band-content">
-      <p class="section-label reveal">Our Mission</p>
-      <h2 class="section-title reveal" data-delay="100">To Inspire the World's <em>Greatest</em> Beverages</h2>
-      <p class="reveal" data-delay="200">
+      <p class="section-label reveal" data-i18n="about.feature.label">Our Mission</p>
+      <h2 class="section-title reveal" data-delay="100" data-i18n-html="about.feature.title_html">To Inspire the World's <em>Greatest</em> Beverages</h2>
+      <p class="reveal" data-delay="200" data-i18n="about.feature.p">
         We exist to give beverage makers the finest building blocks nature has to offer — empowering them to create products that delight, nourish, and connect people.
       </p>
       <a href="contact.html" class="btn-primary reveal" data-delay="300" style="margin:0 auto;">
-        Partner With Us
+        <span data-i18n="about.feature.cta">Partner With Us</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -169,8 +174,8 @@
   <section class="team-section">
     <div class="team-inner">
       <div style="margin-bottom:0;" class="reveal">
-        <p class="section-label">Leadership</p>
-        <h2 class="section-title">The <em>Minds</em> Behind NesCola</h2>
+        <p class="section-label" data-i18n="about.team.label">Leadership</p>
+        <h2 class="section-title" data-i18n-html="about.team.title_html">The <em>Minds</em> Behind NesCola</h2>
       </div>
       <div class="team-grid" data-stagger>
       <div class="team-card reveal">
@@ -180,7 +185,7 @@
           </div>
         </div>
         <div class="team-name">Marcus Hollander</div>
-        <div class="team-role">CEO &amp; Co-Founder</div>
+        <div class="team-role" data-i18n="about.team.role1">CEO &amp; Co-Founder</div>
       </div>
       <div class="team-card reveal" data-delay="100">
         <div class="team-card-img">
@@ -189,7 +194,7 @@
           </div>
         </div>
         <div class="team-name">Dr. Elena Vargas</div>
-        <div class="team-role">Chief Science Officer</div>
+        <div class="team-role" data-i18n="about.team.role2">Chief Science Officer</div>
       </div>
       <div class="team-card reveal" data-delay="200">
         <div class="team-card-img">
@@ -198,7 +203,7 @@
           </div>
         </div>
         <div class="team-name">James Kowalski</div>
-        <div class="team-role">Head of Sourcing</div>
+        <div class="team-role" data-i18n="about.team.role3">Head of Sourcing</div>
       </div>
       <div class="team-card reveal" data-delay="300">
         <div class="team-card-img">
@@ -207,7 +212,7 @@
           </div>
         </div>
         <div class="team-name">Yuki Tanaka</div>
-        <div class="team-role">VP Global Partnerships</div>
+        <div class="team-role" data-i18n="about.team.role4">VP Global Partnerships</div>
       </div>
       </div>
     </div>
@@ -215,12 +220,12 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <span class="section-label reveal">Join Our Journey</span>
-    <h2 class="section-title reveal" data-delay="100">Become a <em>NesCola</em><br />Partner</h2>
-    <p class="reveal" data-delay="200">Whether you're a startup craft brewer or a global beverage giant, we have the ingredients and expertise to elevate your product.</p>
+    <span class="section-label reveal" data-i18n="about.cta.label">Join Our Journey</span>
+    <h2 class="section-title reveal" data-delay="100" data-i18n-html="about.cta.title_html">Become a <em>NesCola</em><br />Partner</h2>
+    <p class="reveal" data-delay="200" data-i18n="about.cta.p">Whether you're a startup craft brewer or a global beverage giant, we have the ingredients and expertise to elevate your product.</p>
     <div class="cta-actions reveal" data-delay="300">
-      <a href="contact.html" class="btn-white">Get in Touch</a>
-      <a href="products.html" class="btn-outline-white">View Products</a>
+      <a href="contact.html" class="btn-white" data-i18n="about.cta.primary">Get in Touch</a>
+      <a href="products.html" class="btn-outline-white" data-i18n="about.cta.secondary">View Products</a>
     </div>
   </section>
 
@@ -228,7 +233,7 @@
   <section class="pre-footer" aria-hidden="true">
     <div class="pre-footer-inner">
       <span class="pre-footer-line"></span>
-      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-kicker" data-i18n="prefooter.kicker">NesCola</span>
       <span class="pre-footer-line"></span>
     </div>
   </section>
@@ -237,7 +242,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="logo.png" alt="NesCola" />
-        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
+        <p data-i18n="about.footer.tagline">Crafting premium beverage ingredients with nature's finest botanicals since 2004.</p>
         <div class="social-links">
           <a href="#" aria-label="Instagram">
             <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
@@ -269,36 +274,37 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Company</h5>
+        <h5 data-i18n="footer.company">Company</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="sustainability.html">Sustainability</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
+          <li><a href="about.html" data-i18n="footer.link.about">About Us</a></li>
+          <li><a href="sustainability.html" data-i18n="footer.link.sustain">Sustainability</a></li>
+          <li><a href="#" data-i18n="footer.link.careers">Careers</a></li>
+          <li><a href="#" data-i18n="footer.link.press">Press</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Ingredients</h5>
+        <h5 data-i18n="footer.ingredients">Ingredients</h5>
         <ul>
-          <li><a href="products.html">Botanical Extracts</a></li>
-          <li><a href="products.html">Flavor Systems</a></li>
-          <li><a href="products.html">Functional Compounds</a></li>
-          <li><a href="products.html">Custom Solutions</a></li>
+          <li><a href="products.html" data-i18n="footer.link.botanical">Botanical Extracts</a></li>
+          <li><a href="products.html" data-i18n="footer.link.flavor">Flavor Systems</a></li>
+          <li><a href="products.html" data-i18n="footer.link.functional">Functional Compounds</a></li>
+          <li><a href="products.html" data-i18n="footer.link.custom">Custom Solutions</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Contact</h5>
+        <h5 data-i18n="footer.contact">Contact</h5>
         <ul>
-          <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Request Sample</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.touch">Get in Touch</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.sample">Request Sample</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <p data-i18n="footer.copy">© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Use</a>
+        <a href="#" data-i18n="footer.cookies">Cookie Settings</a>
       </div>
     </div>
   </footer>

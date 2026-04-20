@@ -18,13 +18,13 @@
       <div class="loader-ring" aria-hidden="true"></div>
       <div class="loader-mark">
         <img src="logo.png" alt="NesCola" class="loader-logo" />
-        <div class="loader-subtitle">Private ingredient house</div>
+        <div class="loader-subtitle" data-i18n="loader.subtitle">Private ingredient house</div>
       </div>
       <div class="loader-bar" aria-hidden="true"><div class="loader-bar-fill"></div></div>
       <div class="loader-metrics" aria-live="polite">
         <span class="loader-dot" aria-hidden="true"></span>
         <span class="loader-pct" id="loader-pct">0%</span>
-        <span>Preparing experience</span>
+        <span data-i18n="loader.metrics">Preparing experience</span>
       </div>
     </div>
   </div>
@@ -46,23 +46,28 @@
 
   <!-- Mobile Menu -->
   <nav class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Ingredients</a>
-    <a href="sustainability.html">Sustainability</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+    <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
   <!-- Navbar -->
   <header id="navbar">
     <a href="index.html" class="nav-logo"><img src="logo.png" alt="NesCola" /></a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Ingredients</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="products.html" data-i18n="nav.ingredients">Ingredients</a>
+      <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact Us</a>
     </nav>
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      <button type="button" class="lang-btn" data-lang="tk">TK</button>
+    </div>
     <div class="hamburger">
       <span></span><span></span><span></span>
     </div>
@@ -76,25 +81,25 @@
       <div class="hero-shape hero-shape-3"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow reveal-clip">Nature's Finest Ingredients</p>
-      <h1 class="hero-title">
+      <p class="hero-eyebrow reveal-clip" data-i18n="home.hero.eyebrow">Nature's Finest Ingredients</p>
+      <h1 class="hero-title" data-i18n-html="home.hero.title_html">
         Crafting the<br />
         <em>Essence</em> of<br />
         Every Beverage
       </h1>
-      <p class="hero-subtitle">
+      <p class="hero-subtitle" data-i18n="home.hero.sub">
         From botanical extracts to precision-engineered flavor compounds, NesCola supplies world-class beverage makers with the ingredients that define extraordinary taste.
       </p>
       <div class="hero-actions">
         <a href="products.html" class="btn-primary">
-          Explore Ingredients
+          <span data-i18n="home.hero.cta.primary">Explore Ingredients</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="about.html" class="btn-ghost">Our Story</a>
+        <a href="about.html" class="btn-ghost" data-i18n="home.hero.cta.secondary">Our Story</a>
       </div>
     </div>
     <div class="hero-scroll">
-      <span>Scroll</span>
+      <span data-i18n="home.hero.scroll">Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -121,15 +126,15 @@
       <div class="intro-visual-frame" aria-hidden="true">
         <img src="logo.png" alt="NesCola" class="intro-visual-logo" />
       </div>
-      <div class="intro-visual-tag">Est. 2004 · Premium Quality</div>
+      <div class="intro-visual-tag" data-i18n="home.intro.visual_tag">Est. 2004 · Premium Quality</div>
     </div>
     <div class="intro-text reveal-right" data-delay="150">
-      <p class="section-label">Who We Are</p>
-      <h2 class="section-title">Two Decades of <em>Botanical</em> Excellence</h2>
-      <p>NesCola has been at the forefront of beverage ingredient innovation since 2004. We partner with distilleries, craft breweries, soft drink producers, and functional beverage brands to deliver ingredients that elevate every sip.</p>
-      <p>Our research and development team blends traditional botanical knowledge with cutting-edge extraction science, sourcing from over 40 countries to bring you unparalleled purity and complexity.</p>
+      <p class="section-label" data-i18n="home.intro.label">Who We Are</p>
+      <h2 class="section-title" data-i18n-html="home.intro.title_html">Two Decades of <em>Botanical</em> Excellence</h2>
+      <p data-i18n="home.intro.p1">NesCola has been at the forefront of beverage ingredient innovation since 2004. We partner with distilleries, craft breweries, soft drink producers, and functional beverage brands to deliver ingredients that elevate every sip.</p>
+      <p data-i18n="home.intro.p2">Our research and development team blends traditional botanical knowledge with cutting-edge extraction science, sourcing from over 40 countries to bring you unparalleled purity and complexity.</p>
       <a href="about.html" class="btn-link">
-        Discover Our Heritage
+        <span data-i18n="home.intro.link">Discover Our Heritage</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -139,19 +144,19 @@
   <section class="stats-section">
     <div class="stat-item reveal" data-delay="0">
       <div class="stat-num" data-count="40" data-suffix="+">40<span>+</span></div>
-      <div class="stat-label">Countries Sourced</div>
+      <div class="stat-label" data-i18n="home.stats.countries">Countries Sourced</div>
     </div>
     <div class="stat-item reveal" data-delay="100">
       <div class="stat-num" data-count="1200" data-suffix="+">1200<span>+</span></div>
-      <div class="stat-label">Active Ingredients</div>
+      <div class="stat-label" data-i18n="home.stats.ingredients">Active Ingredients</div>
     </div>
     <div class="stat-item reveal" data-delay="200">
       <div class="stat-num" data-count="350" data-suffix="+">350<span>+</span></div>
-      <div class="stat-label">Brand Partners</div>
+      <div class="stat-label" data-i18n="home.stats.partners">Brand Partners</div>
     </div>
     <div class="stat-item reveal" data-delay="300">
       <div class="stat-num" data-count="20" data-suffix=" Yrs">20<span> Yrs</span></div>
-      <div class="stat-label">Expertise</div>
+      <div class="stat-label" data-i18n="home.stats.years">Expertise</div>
     </div>
   </section>
 
@@ -159,11 +164,11 @@
   <section class="products-section">
     <div class="products-header">
       <div class="reveal">
-        <p class="section-label">Our Portfolio</p>
-        <h2 class="section-title">Ingredient <em>Categories</em></h2>
+        <p class="section-label" data-i18n="home.products.label">Our Portfolio</p>
+        <h2 class="section-title" data-i18n-html="home.products.title_html">Ingredient <em>Categories</em></h2>
       </div>
       <a href="products.html" class="btn-link reveal" style="margin-bottom:8px;">
-        Full Catalogue
+        <span data-i18n="home.products.link">Full Catalogue</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -177,11 +182,11 @@
           <div class="product-card-overlay"></div>
         </div>
         <div class="product-card-body">
-          <div class="product-card-tag">Category 01</div>
-          <h3 class="product-card-title">Botanical Extracts</h3>
-          <p class="product-card-desc">Cold-pressed and CO₂-extracted botanicals preserving full-spectrum aromatic profiles and bioactive compounds.</p>
+          <div class="product-card-tag" data-i18n="home.card1.tag">Category 01</div>
+          <h3 class="product-card-title" data-i18n="products.filter.botanical">Botanical Extracts</h3>
+          <p class="product-card-desc" data-i18n="home.card1.desc">Cold-pressed and CO₂-extracted botanicals preserving full-spectrum aromatic profiles and bioactive compounds.</p>
           <a href="products.html" class="product-card-link">
-            Learn More
+            <span data-i18n="home.common.learn_more">Learn More</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -195,11 +200,11 @@
           <div class="product-card-overlay"></div>
         </div>
         <div class="product-card-body">
-          <div class="product-card-tag">Category 02</div>
-          <h3 class="product-card-title">Natural Flavor Systems</h3>
-          <p class="product-card-desc">Complex flavor architectures built from natural sources — fruit, spice, herb, and smoke profiles for every application.</p>
+          <div class="product-card-tag" data-i18n="home.card2.tag">Category 02</div>
+          <h3 class="product-card-title" data-i18n="home.card2.title">Natural Flavor Systems</h3>
+          <p class="product-card-desc" data-i18n="home.card2.desc">Complex flavor architectures built from natural sources — fruit, spice, herb, and smoke profiles for every application.</p>
           <a href="products.html" class="product-card-link">
-            Learn More
+            <span data-i18n="home.common.learn_more">Learn More</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -213,11 +218,11 @@
           <div class="product-card-overlay"></div>
         </div>
         <div class="product-card-body">
-          <div class="product-card-tag">Category 03</div>
-          <h3 class="product-card-title">Functional Compounds</h3>
-          <p class="product-card-desc">Adaptogens, nootropics, vitamins and minerals formulated for beverages — clean-label and efficacious.</p>
+          <div class="product-card-tag" data-i18n="home.card3.tag">Category 03</div>
+          <h3 class="product-card-title" data-i18n="products.filter.functional">Functional Compounds</h3>
+          <p class="product-card-desc" data-i18n="home.card3.desc">Adaptogens, nootropics, vitamins and minerals formulated for beverages — clean-label and efficacious.</p>
           <a href="products.html" class="product-card-link">
-            Learn More
+            <span data-i18n="home.common.learn_more">Learn More</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -237,15 +242,15 @@
       <svg width="80" height="80" viewBox="0 0 80 80"><path d="M40 5 C55 5 75 25 75 45 C75 65 55 75 40 75 C25 75 5 55 5 40 C5 20 25 5 40 5Z"/></svg>
     </div>
     <div class="feature-band-content">
-      <p class="section-label reveal">Our Promise</p>
-      <h2 class="section-title reveal" data-delay="100">
+      <p class="section-label reveal" data-i18n="home.feature.label">Our Promise</p>
+      <h2 class="section-title reveal" data-delay="100" data-i18n-html="home.feature.title_html">
         Where <em>Science</em><br />Meets Nature
       </h2>
-      <p class="reveal" data-delay="200">
+      <p class="reveal" data-delay="200" data-i18n="home.feature.p">
         Every ingredient we develop undergoes rigorous sensory evaluation, stability testing, and regulatory compliance review — so our partners can innovate with confidence.
       </p>
       <a href="contact.html" class="btn-primary reveal" data-delay="300" style="margin:0 auto;">
-        Request Samples
+        <span data-i18n="home.feature.cta">Request Samples</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -254,31 +259,31 @@
   <!-- Sustainability teaser -->
   <section class="sustain-section">
     <div class="sustain-pillars reveal-left">
-      <p class="section-label">Responsibility</p>
-      <h2 class="section-title" style="margin-bottom:40px;">Sustainable by <em>Design</em></h2>
+      <p class="section-label" data-i18n="home.sustain.label">Responsibility</p>
+      <h2 class="section-title" style="margin-bottom:40px;" data-i18n-html="home.sustain.title_html">Sustainable by <em>Design</em></h2>
       <div class="sustain-pillar">
         <div class="pillar-num">01</div>
         <div class="pillar-content">
-          <h4>Ethical Sourcing</h4>
-          <p>Direct relationships with 180+ certified farms across 40 nations, ensuring fair trade and biodiversity protection.</p>
+          <h4 data-i18n="home.sustain.p1.title">Ethical Sourcing</h4>
+          <p data-i18n="home.sustain.p1">Direct relationships with 180+ certified farms across 40 nations, ensuring fair trade and biodiversity protection.</p>
         </div>
       </div>
       <div class="sustain-pillar">
         <div class="pillar-num">02</div>
         <div class="pillar-content">
-          <h4>Carbon-Neutral Processing</h4>
-          <p>Our extraction facilities run on 100% renewable energy, targeting net-zero emissions by 2030.</p>
+          <h4 data-i18n="home.sustain.p2.title">Carbon-Neutral Processing</h4>
+          <p data-i18n="home.sustain.p2">Our extraction facilities run on 100% renewable energy, targeting net-zero emissions by 2030.</p>
         </div>
       </div>
       <div class="sustain-pillar">
         <div class="pillar-num">03</div>
         <div class="pillar-content">
-          <h4>Zero-Waste Extraction</h4>
-          <p>Proprietary cascade extraction processes repurpose 98% of raw botanical material into value-added byproducts.</p>
+          <h4 data-i18n="home.sustain.p3.title">Zero-Waste Extraction</h4>
+          <p data-i18n="home.sustain.p3">Proprietary cascade extraction processes repurpose 98% of raw botanical material into value-added byproducts.</p>
         </div>
       </div>
       <a href="sustainability.html" class="btn-link" style="margin-top:32px;">
-        Our Sustainability Report
+        <span data-i18n="home.sustain.link">Our Sustainability Report</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -287,8 +292,8 @@
         <div class="sustain-big-num">98%</div>
         <div class="sustain-badge">
           <div class="big-pct">98<span style="font-size:48px">%</span></div>
-          <p>Botanical material<br />repurposed &amp; upcycled</p>
-          <span class="year-tag">Target 2030</span>
+          <p data-i18n-html="home.sustain.badge">Botanical material<br />repurposed &amp; upcycled</p>
+          <span class="year-tag" data-i18n="home.sustain.tag">Target 2030</span>
         </div>
       </div>
     </div>
@@ -298,11 +303,11 @@
   <section class="news-section">
     <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:0;">
       <div class="reveal">
-        <p class="section-label">Latest News</p>
-        <h2 class="section-title">Insights &amp; <em>Innovations</em></h2>
+        <p class="section-label" data-i18n="home.news.label">Latest News</p>
+        <h2 class="section-title" data-i18n-html="home.news.title_html">Insights &amp; <em>Innovations</em></h2>
       </div>
       <a href="#" class="btn-link reveal" style="margin-bottom:8px;">
-        View All
+        <span data-i18n="home.news.all">View All</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -313,10 +318,10 @@
             <span style="font-size:80px;opacity:0.35">🌱</span>
           </div>
         </div>
-        <div class="news-date">March 2026 · Sustainability</div>
-        <h3 class="news-title">NesCola Achieves Carbon-Neutral Certification Across All EU Processing Facilities</h3>
-        <p class="news-excerpt">Following a three-year transformation of our energy infrastructure, all six European extraction sites now operate on 100% certified renewable energy, marking a significant milestone in our path to net-zero.</p>
-        <a href="#" class="news-link">Read More <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="news-date" data-i18n="home.news1.date">March 2026 · Sustainability</div>
+        <h3 class="news-title" data-i18n="home.news1.title">NesCola Achieves Carbon-Neutral Certification Across All EU Processing Facilities</h3>
+        <p class="news-excerpt" data-i18n="home.news1.excerpt">Following a three-year transformation of our energy infrastructure, all six European extraction sites now operate on 100% certified renewable energy, marking a significant milestone in our path to net-zero.</p>
+        <a href="#" class="news-link"><span data-i18n="home.common.read_more">Read More</span> <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <div class="news-card reveal" data-delay="100">
         <div class="news-card-img">
@@ -324,10 +329,10 @@
             <span style="font-size:60px;opacity:0.35">🔬</span>
           </div>
         </div>
-        <div class="news-date">February 2026 · Innovation</div>
-        <h3 class="news-title">Introducing AquaZen™ — Our New Functional Water Enhancement Series</h3>
-        <p class="news-excerpt">A breakthrough mineral and adaptogen system designed specifically for premium still and sparkling waters.</p>
-        <a href="#" class="news-link">Read More <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="news-date" data-i18n="home.news2.date">February 2026 · Innovation</div>
+        <h3 class="news-title" data-i18n="home.news2.title">Introducing AquaZen™ — Our New Functional Water Enhancement Series</h3>
+        <p class="news-excerpt" data-i18n="home.news2.excerpt">A breakthrough mineral and adaptogen system designed specifically for premium still and sparkling waters.</p>
+        <a href="#" class="news-link"><span data-i18n="home.common.read_more">Read More</span> <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <div class="news-card reveal" data-delay="200">
         <div class="news-card-img">
@@ -335,17 +340,17 @@
             <span style="font-size:60px;opacity:0.35">🏆</span>
           </div>
         </div>
-        <div class="news-date">January 2026 · Awards</div>
-        <h3 class="news-title">NesCola Wins Best Supplier Award at BevTech Global Summit 2026</h3>
-        <p class="news-excerpt">Recognized by 350+ industry peers for outstanding ingredient quality, innovation, and sustainability leadership.</p>
-        <a href="#" class="news-link">Read More <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="news-date" data-i18n="home.news3.date">January 2026 · Awards</div>
+        <h3 class="news-title" data-i18n="home.news3.title">NesCola Wins Best Supplier Award at BevTech Global Summit 2026</h3>
+        <p class="news-excerpt" data-i18n="home.news3.excerpt">Recognized by 350+ industry peers for outstanding ingredient quality, innovation, and sustainability leadership.</p>
+        <a href="#" class="news-link"><span data-i18n="home.common.read_more">Read More</span> <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </section>
 
   <!-- Partners -->
   <section class="partners-section">
-    <p class="partners-title reveal">Trusted by leading beverage brands worldwide</p>
+    <p class="partners-title reveal" data-i18n="home.partners">Trusted by leading beverage brands worldwide</p>
     <div class="partners-marquee reveal" data-delay="100" aria-label="Partner brands carousel">
       <div class="partners-track">
         <span class="partner-logo">Aqua<em>Pure</em></span>
@@ -364,15 +369,15 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <span class="section-label reveal">Get Started</span>
-    <h2 class="section-title reveal" data-delay="100">Ready to <em>Elevate</em><br />Your Beverage?</h2>
-    <p class="reveal" data-delay="200">Our ingredient specialists are ready to help you create the flavors your customers will never forget. Request a consultation or sample kit today.</p>
+    <span class="section-label reveal" data-i18n="home.cta.label">Get Started</span>
+    <h2 class="section-title reveal" data-delay="100" data-i18n-html="home.cta.title_html">Ready to <em>Elevate</em><br />Your Beverage?</h2>
+    <p class="reveal" data-delay="200" data-i18n="home.cta.p">Our ingredient specialists are ready to help you create the flavors your customers will never forget. Request a consultation or sample kit today.</p>
     <div class="cta-actions reveal" data-delay="300">
       <a href="contact.html" class="btn-white">
-        Request a Sample
+        <span data-i18n="home.cta.primary">Request a Sample</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <a href="products.html" class="btn-outline-white">Browse Ingredients</a>
+      <a href="products.html" class="btn-outline-white" data-i18n="home.cta.secondary">Browse Ingredients</a>
     </div>
   </section>
 
@@ -380,7 +385,7 @@
   <section class="pre-footer" aria-hidden="true">
     <div class="pre-footer-inner">
       <span class="pre-footer-line"></span>
-      <span class="pre-footer-kicker">NesCola</span>
+      <span class="pre-footer-kicker" data-i18n="prefooter.kicker">NesCola</span>
       <span class="pre-footer-line"></span>
     </div>
   </section>
@@ -390,7 +395,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <img src="logo.png" alt="NesCola" />
-        <p>Crafting premium beverage ingredients with nature's finest botanicals since 2004. Where science meets the art of flavor.</p>
+        <p data-i18n="home.footer.tagline">Crafting premium beverage ingredients with nature's finest botanicals since 2004. Where science meets the art of flavor.</p>
         <div class="social-links">
           <a href="#" aria-label="Instagram">
             <svg class="social-icon-bg" viewBox="0 0 24 24" aria-hidden="true">
@@ -422,39 +427,39 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Company</h5>
+        <h5 data-i18n="footer.company">Company</h5>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="sustainability.html">Sustainability</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Investors</a></li>
+          <li><a href="about.html" data-i18n="footer.link.about">About Us</a></li>
+          <li><a href="sustainability.html" data-i18n="footer.link.sustain">Sustainability</a></li>
+          <li><a href="#" data-i18n="footer.link.careers">Careers</a></li>
+          <li><a href="#" data-i18n="footer.link.press">Press</a></li>
+          <li><a href="#" data-i18n="footer.link.investors">Investors</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Ingredients</h5>
+        <h5 data-i18n="footer.ingredients">Ingredients</h5>
         <ul>
-          <li><a href="products.html">Botanical Extracts</a></li>
-          <li><a href="products.html">Flavor Systems</a></li>
-          <li><a href="products.html">Functional Compounds</a></li>
-          <li><a href="products.html">Mineral Blends</a></li>
-          <li><a href="products.html">Custom Solutions</a></li>
+          <li><a href="products.html" data-i18n="footer.link.botanical">Botanical Extracts</a></li>
+          <li><a href="products.html" data-i18n="footer.link.flavor">Flavor Systems</a></li>
+          <li><a href="products.html" data-i18n="footer.link.functional">Functional Compounds</a></li>
+          <li><a href="products.html" data-i18n="footer.link.minerals">Mineral Blends</a></li>
+          <li><a href="products.html" data-i18n="footer.link.custom">Custom Solutions</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Contact</h5>
+        <h5 data-i18n="footer.contact">Contact</h5>
         <ul>
-          <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Request Sample</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.touch">Get in Touch</a></li>
+          <li><a href="contact.html" data-i18n="footer.link.sample">Request Sample</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
+      <p data-i18n="footer.copy">© 2026 NesCola Beverage Ingredients. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Cookie Settings</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Use</a>
+        <a href="#" data-i18n="footer.cookies">Cookie Settings</a>
       </div>
     </div>
   </footer>
