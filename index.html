@@ -63,10 +63,25 @@
       <a href="sustainability.html" data-i18n="nav.sustainability">Sustainability</a>
       <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact Us</a>
     </nav>
-    <div class="lang-switch" aria-label="Language">
-      <button type="button" class="lang-btn" data-lang="en">EN</button>
-      <button type="button" class="lang-btn" data-lang="ru">RU</button>
-      <button type="button" class="lang-btn" data-lang="tk">TK</button>
+    <div class="lang-switch" data-lang-root aria-label="Language">
+      <button type="button" class="lang-switch-toggle" id="lang-switch-btn" aria-expanded="false" aria-haspopup="listbox">
+        <span class="lang-switch-flag" aria-hidden="true">🇬🇧</span>
+        <span class="lang-switch-code">EN</span>
+      </button>
+      <div class="lang-dropdown" id="lang-dropdown" role="listbox" hidden>
+        <button type="button" class="lang-option" data-lang="en" role="option">
+          <span class="lang-flag" aria-hidden="true">🇬🇧</span>
+          <span class="lang-label" data-i18n="nav.lang.en">EN</span>
+        </button>
+        <button type="button" class="lang-option" data-lang="ru" role="option">
+          <span class="lang-flag" aria-hidden="true">🇷🇺</span>
+          <span class="lang-label" data-i18n="nav.lang.ru">RU</span>
+        </button>
+        <button type="button" class="lang-option" data-lang="tk" role="option">
+          <span class="lang-flag" aria-hidden="true">🇹🇲</span>
+          <span class="lang-label" data-i18n="nav.lang.tk">TK</span>
+        </button>
+      </div>
     </div>
     <div class="hamburger">
       <span></span><span></span><span></span>

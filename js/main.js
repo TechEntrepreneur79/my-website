@@ -950,6 +950,8 @@ function setStoredLang(lang) {
   try { localStorage.setItem('nescola_lang', lang); } catch {}
 }
 
+const LANG_FLAGS = { en: '🇬🇧', ru: '🇷🇺', tk: '🇹🇲' };
+
 function applyI18n(lang) {
   const dict = I18N[lang] || I18N.en;
   document.documentElement.lang = lang === 'tk' ? 'tk' : lang;
@@ -978,26 +980,68 @@ function applyI18n(lang) {
     el.setAttribute('placeholder', val);
   });
 
-  document.querySelectorAll('.lang-btn').forEach(btn => {
+  const toggle = document.querySelector('.lang-switch-toggle');
+  if (toggle) {
+    const flagEl = toggle.querySelector('.lang-switch-flag');
+    const codeEl = toggle.querySelector('.lang-switch-code');
+    if (flagEl) flagEl.textContent = LANG_FLAGS[lang] || '';
+    if (codeEl) {
+      const lk = `nav.lang.${lang}`;
+      codeEl.textContent = dict[lk] ?? I18N.en[lk] ?? String(lang).toUpperCase();
+    }
+  }
+  document.querySelectorAll('.lang-option').forEach(btn => {
     const bLang = btn.getAttribute('data-lang');
-    btn.classList.toggle('active', bLang === lang);
-    const lk = `nav.lang.${bLang}`;
-    if (dict[lk]) btn.textContent = dict[lk];
+    if (!bLang) return;
+    btn.classList.toggle('is-active', bLang === lang);
+    btn.setAttribute('aria-selected', bLang === lang ? 'true' : 'false');
+  });
+}
+
+function initLangDropdown() {
+  const root = document.querySelector('[data-lang-root]');
+  if (!root) return;
+  const toggle = root.querySelector('.lang-switch-toggle');
+  const dropdown = root.querySelector('.lang-dropdown');
+  if (!toggle || !dropdown) return;
+
+  function closeDropdown() {
+    dropdown.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function openDropdown() {
+    dropdown.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    if (dropdown.hidden) openDropdown();
+    else closeDropdown();
+  });
+
+  root.querySelectorAll('.lang-option').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const next = btn.getAttribute('data-lang');
+      if (!next || !['en', 'ru', 'tk'].includes(next)) return;
+      setStoredLang(next);
+      applyI18n(next);
+      closeDropdown();
+    });
+  });
+
+  document.addEventListener('click', closeDropdown);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeDropdown();
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const lang = getStoredLang();
   applyI18n(lang);
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const next = btn.getAttribute('data-lang');
-      if (!next) return;
-      setStoredLang(next);
-      applyI18n(next);
-    });
-  });
+  initLangDropdown();
 
   /* ---- Page transition overlay ---- */
   const transitionEl = document.getElementById('page-transition');
