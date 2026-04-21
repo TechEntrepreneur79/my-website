@@ -1915,15 +1915,31 @@ footer::after {
   .hero-scroll { display: none; }
   .page-hero {
     align-items: flex-start;
-    padding-top: calc(env(safe-area-inset-top, 0px) + 96px);
+    height: auto;
+    min-height: 0;
+    padding-top: calc(env(safe-area-inset-top, 0px) + 88px);
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 60px;
+    padding-bottom: 28px;
   }
+  .page-hero-breadcrumb { margin-bottom: 12px; }
+  .page-hero-title {
+    font-size: clamp(30px, 8.5vw, 44px);
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+  .feature-band {
+    height: auto;
+    min-height: 0;
+    padding: 44px 0;
+    align-items: center;
+  }
+  .feature-band-content { padding: 28px 24px; }
   .intro-section, .products-section, .stats-section, .sustain-section,
-  .news-section, .partners-section, .cta-section, .sustain-hero-section,
-  .about-story, .team-section, .contact-section { padding: 80px 24px; }
-  .pad-section { padding: 80px 24px; }
+  .news-section, .partners-section, .cta-section { padding: 80px 24px; }
+  .sustain-hero-section,
+  .about-story, .team-section, .contact-section,
+  .values-section, .pad-section { padding: 44px 24px 56px; }
   .products-grid, .products-full { grid-template-columns: 1fr; }
   .stats-section { grid-template-columns: 1fr 1fr; }
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -1934,12 +1950,12 @@ footer::after {
   .pre-footer { padding: 28px 24px; }
   .pre-footer-inner { flex-direction: column; gap: 14px; }
   .cta-actions { flex-direction: column; }
-  .products-intro { padding: 56px 24px 18px; }
+  .products-intro { padding: 32px 24px 18px; }
   .products-intro-inner { grid-template-columns: 1fr; gap: 22px; }
   .products-intro-text { margin-left: 0; max-width: 100%; }
   .products-filter { padding: 40px 24px 0; }
   .team-grid { grid-template-columns: 1fr 1fr; }
-  .sustain-commitment { grid-template-columns: 1fr; }
+  .sustain-commitment { grid-template-columns: 1fr; margin-top: 40px; }
   .contact-form { padding: 32px 24px; }
   .form-row { grid-template-columns: 1fr; }
   .turnkey-section { padding: 10px 24px 0; }
@@ -1969,11 +1985,13 @@ footer::after {
     padding-bottom: 56px;
   }
   .page-hero {
-    padding-top: calc(env(safe-area-inset-top, 0px) + 92px);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 88px);
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 52px;
+    padding-bottom: 24px;
   }
+  .feature-band { padding: 36px 0; }
+  .feature-band-content { padding: 24px 20px; }
   #navbar { padding: 18px 20px; }
   #navbar.scrolled { padding: 12px 20px; }
 }
