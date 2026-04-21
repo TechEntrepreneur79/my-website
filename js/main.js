@@ -37,9 +37,6 @@ const I18N = {
     'footer.link.dist': 'Distributor Login',
     'footer.link.support': 'Technical Support',
     'footer.link.docs': 'Quality Documents',
-    'footer.privacy': 'Privacy Policy',
-    'footer.terms': 'Terms of Use',
-    'footer.cookies': 'Cookie Settings',
     'footer.copy': '© 2026 NesCola Beverage Ingredients. All rights reserved.',
     'home.hero.eyebrow': "Nature's Finest Ingredients",
     'home.hero.title_html': 'Crafting the<br /><em>Essence</em> of<br />Every Beverage',
@@ -348,9 +345,6 @@ const I18N = {
     'footer.link.dist': 'Вход для дистрибьюторов',
     'footer.link.support': 'Техподдержка',
     'footer.link.docs': 'Документы качества',
-    'footer.privacy': 'Политика конфиденциальности',
-    'footer.terms': 'Условия использования',
-    'footer.cookies': 'Настройки cookie',
     'footer.copy': '© 2026 NesCola Beverage Ingredients. Все права защищены.',
     'home.hero.eyebrow': 'Лучшие ингредиенты природы',
     'home.hero.title_html': 'Создаём<br /><em>суть</em><br />каждого напитка',
@@ -659,9 +653,6 @@ const I18N = {
     'footer.link.dist': 'Distribýutor girişi',
     'footer.link.support': 'Tehniki goldaw',
     'footer.link.docs': 'Hiliýet resminamalary',
-    'footer.privacy': 'Gizlinlik syýasaty',
-    'footer.terms': 'Ulanyş şertleri',
-    'footer.cookies': 'Cookie sazlamalary',
     'footer.copy': '© 2026 NesCola Beverage Ingredients. Ähli hukuklar goragly.',
     'home.hero.eyebrow': 'Tebiň iň gowy ingredientleri',
     'home.hero.title_html': 'Her içginligiň<br /><em>özüni</em><br />döredýäris',
@@ -1019,19 +1010,23 @@ function initLangDropdown() {
   if (!toggle || !dropdown) return;
 
   function closeDropdown() {
-    dropdown.hidden = true;
+    dropdown.classList.remove('is-open');
+    dropdown.setAttribute('aria-hidden', 'true');
     toggle.setAttribute('aria-expanded', 'false');
   }
 
   function openDropdown() {
-    dropdown.hidden = false;
+    dropdown.classList.add('is-open');
+    dropdown.setAttribute('aria-hidden', 'false');
     toggle.setAttribute('aria-expanded', 'true');
   }
 
+  closeDropdown();
+
   toggle.addEventListener('click', e => {
     e.stopPropagation();
-    if (dropdown.hidden) openDropdown();
-    else closeDropdown();
+    if (dropdown.classList.contains('is-open')) closeDropdown();
+    else openDropdown();
   });
 
   root.querySelectorAll('.lang-option').forEach(btn => {
