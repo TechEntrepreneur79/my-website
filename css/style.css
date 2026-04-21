@@ -322,6 +322,14 @@ body.is-transitioning .transition-mark {
   padding: 16px 60px;
   box-shadow: 0 1px 30px rgba(0,0,0,0.08);
 }
+/* Fixed bar over full-bleed heroes: scrim so hero copy (e.g. eyebrow) doesn’t read through under the logo */
+body:has(.hero) #navbar:not(.scrolled),
+body:has(.page-hero) #navbar:not(.scrolled) {
+  background: rgba(15, 26, 69, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
 #navbar.dark-nav {
   background: transparent;
 }

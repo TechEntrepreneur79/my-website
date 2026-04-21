@@ -1040,6 +1040,12 @@ function initLangDropdown() {
     });
   });
 
+  /* pointerdown + capture: Edge/Chromium sometimes miss document click for closing overlays */
+  function onDocPointerDown(e) {
+    if (e.button !== 0 && e.button !== undefined) return;
+    if (!root.contains(e.target)) closeDropdown();
+  }
+  document.addEventListener('pointerdown', onDocPointerDown, true);
   document.addEventListener('click', e => {
     if (!root.contains(e.target)) closeDropdown();
   });
