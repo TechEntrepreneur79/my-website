@@ -1,5 +1,10 @@
 /* ============================================
    NESCOLA – Main JavaScript
+   ============================================
+   Translations: edit the I18N object below — keys like 'nav.home' are shared
+   across pages. Each language has its own block (en, ru, tk). Keep the same
+   keys in all three. After saving, refresh the site. The chosen language is
+   stored in localStorage as nescola_lang (values: en | ru | tk).
    ============================================ */
 
 const I18N = {
@@ -950,7 +955,12 @@ function setStoredLang(lang) {
   try { localStorage.setItem('nescola_lang', lang); } catch {}
 }
 
-const LANG_FLAGS = { en: '🇬🇧', ru: '🇷🇺', tk: '🇹🇲' };
+/* PNG flags (Windows often shows emoji flags as letters like GB/RU) */
+const LANG_FLAG_SRC = {
+  en: 'https://flagcdn.com/w40/gb.png',
+  ru: 'https://flagcdn.com/w40/ru.png',
+  tk: 'https://flagcdn.com/w40/tm.png'
+};
 
 function applyI18n(lang) {
   const dict = I18N[lang] || I18N.en;
@@ -982,9 +992,12 @@ function applyI18n(lang) {
 
   const toggle = document.querySelector('.lang-switch-toggle');
   if (toggle) {
-    const flagEl = toggle.querySelector('.lang-switch-flag');
+    const flagImg = toggle.querySelector('.lang-flag-img');
     const codeEl = toggle.querySelector('.lang-switch-code');
-    if (flagEl) flagEl.textContent = LANG_FLAGS[lang] || '';
+    if (flagImg && flagImg.tagName === 'IMG') {
+      flagImg.src = LANG_FLAG_SRC[lang] || LANG_FLAG_SRC.en;
+      flagImg.alt = '';
+    }
     if (codeEl) {
       const lk = `nav.lang.${lang}`;
       codeEl.textContent = dict[lk] ?? I18N.en[lk] ?? String(lang).toUpperCase();
@@ -1032,7 +1045,9 @@ function initLangDropdown() {
     });
   });
 
-  document.addEventListener('click', closeDropdown);
+  document.addEventListener('click', e => {
+    if (!root.contains(e.target)) closeDropdown();
+  });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeDropdown();
   });

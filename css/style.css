@@ -428,6 +428,17 @@ body.is-transitioning .transition-mark {
   border-color: rgba(255,255,255,0.45);
   background: rgba(255,255,255,0.1);
 }
+.lang-flag-img {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.12);
+}
+#navbar.scrolled .lang-flag-img {
+  box-shadow: 0 0 0 1px rgba(27,42,107,0.15);
+}
 .lang-switch-flag {
   font-size: 1.15em;
   line-height: 1;
@@ -446,6 +457,10 @@ body.is-transitioning .transition-mark {
 #navbar.scrolled .lang-switch-toggle:hover {
   border-color: rgba(27,42,107,0.35);
   background: rgba(255,255,255,0.95);
+}
+/* [hidden] must win: .lang-dropdown { display:flex } otherwise overrides the hidden attribute */
+.lang-dropdown[hidden] {
+  display: none !important;
 }
 .lang-dropdown {
   position: absolute;
@@ -494,9 +509,8 @@ body.is-transitioning .transition-mark {
   background: rgba(90,158,53,0.12);
   color: var(--white);
 }
-.lang-option .lang-flag {
-  font-size: 1.2em;
-  line-height: 1;
+.lang-option .lang-flag-img {
+  align-self: center;
 }
 .lang-option .lang-label {
   font-family: var(--font-sans);
