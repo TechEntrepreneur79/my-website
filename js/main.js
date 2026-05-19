@@ -7,6 +7,9 @@
    stored in localStorage as nescola_lang (values: en | ru | tk).
    ============================================ */
 
+/** Paste your Access Key from https://web3forms.com (free) — enquiries go to the email you verify there. Leave empty for demo-only submit on the contact page. */
+const WEB3FORMS_ACCESS_KEY = '';
+
 const I18N = {
   en: {
     'nav.home': 'Home',
@@ -285,6 +288,7 @@ const I18N = {
     'contact.form.submit': 'Send Message',
     'contact.form.sending': 'Sending…',
     'contact.form.sent': 'Message sent!',
+    'contact.form.error': 'Could not send. Please try again or email info@nescola.com.',
     'contact.form.ph_fname': 'Marcus',
     'contact.form.ph_lname': 'Hollander',
     'contact.form.ph_company': 'Your Beverage Brand',
@@ -593,6 +597,7 @@ const I18N = {
     'contact.form.submit': 'Отправить',
     'contact.form.sending': 'Отправка…',
     'contact.form.sent': 'Сообщение отправлено!',
+    'contact.form.error': 'Не удалось отправить. Попробуйте снова или напишите на info@nescola.com.',
     'contact.form.ph_fname': 'Имя',
     'contact.form.ph_lname': 'Фамилия',
     'contact.form.ph_company': 'Ваш бренд напитков',
@@ -901,6 +906,7 @@ const I18N = {
     'contact.form.submit': 'Ugratmak',
     'contact.form.sending': 'Ugradylýar…',
     'contact.form.sent': 'Hat ugradyldy!',
+    'contact.form.error': 'Ugradyp bolmady. Täzeden synanyşyň ýa-da info@nescola.com-a ýazyň.',
     'contact.form.ph_fname': 'Adyňyz',
     'contact.form.ph_lname': 'Familiýaňyz',
     'contact.form.ph_company': 'Içginlik markaňyz',
@@ -1361,26 +1367,88 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---- Form submit (demo) ---- */
-  const form = document.querySelector('.contact-form form');
-  if (form) {
-    form.addEventListener('submit', e => {
+  /* ---- Contact form → email (Web3Forms when WEB3FORMS_ACCESS_KEY is set) ---- */
+  const contactForm = document.querySelector('.contact-form form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async e => {
       e.preventDefault();
-      const btn = form.querySelector('.form-submit');
+      const btn = contactForm.querySelector('.form-submit');
       const lang = getStoredLang();
       const dict = I18N[lang] || I18N.en;
       const sending = dict['contact.form.sending'] ?? I18N.en['contact.form.sending'];
       const sent = dict['contact.form.sent'] ?? I18N.en['contact.form.sent'];
+      const errText = dict['contact.form.error'] ?? I18N.en['contact.form.error'];
+
+      const fd = new FormData(contactForm);
+      const fname = String(fd.get('fname') || '').trim();
+      const lname = String(fd.get('lname') || '').trim();
+      const company = String(fd.get('company') || '').trim();
+      const email = String(fd.get('email') || '').trim();
+      const subjectVal = String(fd.get('subject') || '').trim();
+      const message = String(fd.get('message') || '').trim();
+      const fullName = `${fname} ${lname}`.trim();
+
+      const resetBtn = () => {
+        btn.disabled = false;
+        btn.style.background = '';
+        applyI18n(lang);
+      };
+
+      if (!WEB3FORMS_ACCESS_KEY) {
+        console.info(
+          '[NesCola] Set WEB3FORMS_ACCESS_KEY at the top of js/main.js to deliver enquiries to your email (https://web3forms.com).'
+        );
+        btn.textContent = sending;
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.textContent = sent;
+          btn.style.background = 'var(--green-mid)';
+          contactForm.reset();
+          setTimeout(resetBtn, 3000);
+        }, 800);
+        return;
+      }
+
+      btn.disabled = true;
       btn.textContent = sending;
-      setTimeout(() => {
+
+      const subjectLine = `NesCola website · ${subjectVal || 'enquiry'}`;
+      const bodyLines = [
+        `Name: ${fullName || '(not provided)'}`,
+        company ? `Company: ${company}` : null,
+        `Email: ${email}`,
+        `Enquiry type: ${subjectVal || '—'}`,
+        '',
+        message
+      ].filter(line => line !== null);
+      const bodyText = bodyLines.join('\n');
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_ACCESS_KEY,
+            subject: subjectLine,
+            name: fullName || 'Website visitor',
+            email,
+            message: bodyText,
+            from_name: fullName || 'Website visitor'
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || data.success === false) {
+          throw new Error(data.message || 'Submit failed');
+        }
         btn.textContent = sent;
         btn.style.background = 'var(--green-mid)';
-        form.reset();
-        setTimeout(() => {
-          btn.style.background = '';
-          applyI18n(lang);
-        }, 3000);
-      }, 1400);
+        contactForm.reset();
+        setTimeout(resetBtn, 3000);
+      } catch {
+        btn.textContent = errText;
+        btn.style.background = '#8b2942';
+        setTimeout(resetBtn, 5000);
+      }
     });
   }
 
